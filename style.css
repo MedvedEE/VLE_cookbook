@@ -1,0 +1,152 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgb(61, 73, 145);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .pealkiri h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header .pealkiri h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background: url('images/banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1; 
+}
+
+.meist {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: left; 
+    margin: 20px 0;
+    gap: 40px; 
+}
+
+.meist p {
+    max-width: 50%;  
+    line-height: 1.6;
+}
+
+.kokad img {
+    width: auto; 
+    max-width: 300px; 
+    height: auto;  
+    border-radius: 10px;
+    margin-top: 0;  
+}
+.koogid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; 
+    text-align: center; 
+}
+
+.koogid .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+.koogid img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.koogid img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.post-header {
+    display: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.toidupildid:hover .post-header {
+    display: block;
+}
+
+footer {
+    background-color: rgb(61, 73, 145);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+footer .alumine_osa {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .alumine_osa li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .sotsmeedia a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    transition: opacity 0.3s ease;
+}
+
+footer .sotsmeedia a img:hover {
+    opacity: 0.7;
+}
